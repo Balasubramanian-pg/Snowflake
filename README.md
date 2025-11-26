@@ -2,6 +2,130 @@
 Here is a **step-by-step roadmap** to learn Snowflake for SQL and data-warehousing, distilled from the most recent and practical sources.  
 It is split into **4 phases** so you can track progress whether you are a total beginner or already comfortable with SQL.
 
+# Snowflake 101
+
+## A Clear Introduction for Beginners
+
+### What Snowflake Is
+
+* A cloud-native data platform used for storing, processing and analyzing data
+* Fully managed, meaning you don’t handle infrastructure, servers or tuning yourself
+* Runs on AWS, Azure and GCP
+* Designed for scalable analytics, warehousing, data engineering and data sharing
+
+### Why Snowflake Matters
+
+* Separates **storage** and **compute**, allowing you to scale each independently
+* Lets multiple teams query the same data without performance clashes
+* Supports near-zero maintenance with automatic optimization
+* Enables secure and fast cross-company data sharing
+
+---
+
+# Core Concepts
+
+## Architecture
+
+* **Storage Layer**
+
+  * Holds structured and semi-structured data (JSON, Parquet, XML, Avro)
+  * Automatically compressed and columnar
+* **Compute Layer (Virtual Warehouses)**
+
+  * Independent clusters used to run your queries
+  * Can pause and resume, scale up/down anytime
+* **Cloud Services Layer**
+
+  * Handles authentication, metadata, security and query optimization
+
+## Virtual Warehouses
+
+* Each warehouse is a compute engine
+* Used for loading data, running SQL, transforming data or powering dashboards
+* Sized from XS to 6XL depending on workload
+
+---
+
+# Key Features
+
+## Data Storage & Ingestion
+
+* Can load data from files, cloud storage, or external tables
+* Supports continuous ingestion with **Snowpipe**
+* Accepts structured and semi-structured formats
+
+## SQL & Processing
+
+* Fully ANSI SQL compliant
+* Widely used for transformations, pipelines and analytics
+* Handles massive workloads without manual tuning
+
+## Time Travel & Cloning
+
+* **Time Travel** allows querying older snapshots of data
+* **Zero-Copy Cloning** creates instant, lightweight duplicates of databases, schemas or tables without extra storage
+
+## Data Sharing
+
+* Shares data across teams or organizations without copying
+* Consumers always see live data
+* Eliminates ETL cycles and duplication
+
+---
+
+# Typical Use Cases
+
+## Data Warehousing
+
+* Central store for analytical workloads
+* Supports dashboards, BI tools and reporting
+
+## Data Engineering
+
+* ELT pipelines
+* Large-scale transformations
+* Batch and near-real-time processing
+
+## Data Sharing Ecosystem
+
+* Use cases in pharma, retail, BFSI, adtech and more
+* Enables collaboration with vendors, partners, hospitals, distributors, etc.
+
+---
+
+# Beginners' Mental Model
+
+* Think of **Snowflake** as:
+
+  * Your storage drive for all types of data
+  * Your compute clusters (warehouses) to run heavy analytics
+  * Your sharing hub to exchange data securely
+  * Your managed environment where performance, scaling and tuning happen automatically
+
+---
+
+# What You Should Learn Next
+
+## Foundational
+
+* Database objects: Database, Schema, Tables, Views, Stages
+* Warehouses: Sizing, cost control, multi-cluster
+* Loading data: COPY INTO, stages, Snowpipe
+
+## Intermediate
+
+* Semi-structured handling: VARIANT, FLATTEN
+* Query performance: Micro-partitions, pruning
+* Cloning, Time Travel, Fail-safe
+* Role-based access control (RBAC)
+
+## Advanced
+
+* Task and Stream-based pipelines
+* External tables and Iceberg support
+* Data sharing and marketplace
+* Optimizing cost and performance at scale
+
 ###  Phase 0 – Prerequisites (1-2 weeks)
 | Goal | Resources & Actions |
 |---|---|
