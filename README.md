@@ -15,7 +15,7 @@ It is split into **4 phases** so you can track progress whether you are a total 
 | Do the “Snowflake in 20 min” lab | Install SnowSQL, create DB + table, load CSV, query it . | Keep warehouse size = XS to save credits. |
 | Learn the UI context | Set ROLE / WAREHOUSE / DB / SCHEMA drop-downs correctly . | Prevents 90 % of “object does not exist” errors. |
 
-### 🏗️ Phase 2 – Core SQL & Modeling (Week 3-6)
+### Phase 2 – Core SQL & Modeling (Week 3-6)
 | Skill | What to Practice | Check-List |
 |---|---|---|
 | Snowflake SQL flavour | Sample TPC-H data: SELECT, JOIN, CTE, window functions, COPY INTO . | Pay attention to “Query Profile” for cost. |
